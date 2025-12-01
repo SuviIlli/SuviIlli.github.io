@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Research — Suvinay Goyal</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img class="avatar" src="assets/img/profile.jpg" alt="Your Name">
+    <h1>Suvinay Goyal</h1>
+    <p class="role">Undergradute Senior working in Experimental and Observational Cosmology</p>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="posters.html">Posters</a>
+      <a href="assets/cv/SuviIlli_CV.pdf" download>CV (PDF)</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h2>Research</h2>
+      <p>My research focuses on experimental cosmology (instrumentation and observation). I have also worked on post processing for high-contrast imaging of exoplanet detection. Use the tabs to switch between areas.</p>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Research areas">
+      <div class="tab-buttons" role="presentation">
+        <button id="tab-exp" class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-exp" data-target="exp">Experimental Cosmology</button>
+        <button id="tab-hci" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-hci" data-target="hci">High-Contrast Imaging of Exoplanets</button>
+      </div>
+
+      <!-- Experimental Cosmology panel: two sections in the CV order -->
+      <section id="panel-exp" class="tab-panel" role="tabpanel" aria-labelledby="tab-exp">
+        <div class="research-item">
+          <div style="display:flex;gap:18px;align-items:flex-start;">
+            <img src="assets/img/research/obs_cosmo_lab.jpg" alt="Observational Cosmology & Particle Astrophysics Lab" style="width:260px;height:auto;border-radius:6px;object-fit:cover;">
+            <div>
+              <h3>Terahertz Intensity Mapper (TIM) & SPIDER</h3>
+              <p>
+                [cite_start]At the Observational Cosmology & Particle Astrophysics Lab (UIUC), I work in cryogenic instrumentation and analysis for balloon-borne cosmological telescopes[cite: 13, 23]. 
+                My primary hardware focus is the <strong>Terahertz Intensity Mapper (TIM)</strong>, where I worked on the characterization of Terahertz absorbers and a terahertz reflective attentuator using a 
+                <strong>Toptica Terascan 1550</strong> frequency-selectable laser source. I engineered a blackbody paddle (macrobolometer) for checking 
+                [cite_start]infrared loading and worked on developing ultra-thin <strong>UHMWPE vacuum windows</strong> optimized for mechanical robustness[cite: 23]. I further played a key role in seeing  
+                [cite_start] the optical response of Kinetic Inductance Detector (KID) arrays during instrument first light.[cite: 10].
+            </p>
+            <p>
+                I address the challenge of satellite interference the SPIDER CMB telescope. For the <strong>SPIDER II</strong> mission, I developed the 
+                <a href="https://github.com/SuviIlli/SpiderStarlink" target="_blank">an astrometry package</a>. 
+                This tool tracks Starlink satellite constellations to identify transient signatures in detector timestreams. It includes functionality to cross-correlate 
+                [cite_start]satellite positions with CMB data (in Healpix coordinates)[cite: 21, 22].
+            </p>
+              <p><a href="https://jpf.web.engr.illinois.edu/" aria-label="Filippini Lab : Observational Cosmology and Particle Astrophysics">Filippini Lab : Observational Cosmology and Particle Astrophysics</a></p>
+            </div>
+          </div>
+        </div>
+
+        <hr style="margin:22px 0;border-color:#eef2f6;">
+
+        <div class="research-item">
+          <div style="display:flex;gap:18px;align-items:flex-start;">
+            <img src="assets/img/research/obs_cosmo_group.jpg" alt="Observational Cosmology Group — TIME & BICEP" style="width:260px;height:auto;border-radius:6px;object-fit:cover;">
+            <div>
+              <h3>Caltech SURF : Observational Cosmology Group</h3>
+              <p><strong>Institution:</strong> Caltech &nbsp;•&nbsp; <strong>Dates:</strong> June 2025 – Aug 2025 &nbsp;•&nbsp; <strong>Advisors:</strong> Late Dr. Kenny Lau, Prof. James Bock</p>
+              <p>
+                As part of Caltech's Observational Cosmology Group, I commissioned a 100mK Adiabatic Demagnetization Refrigerator (ADR) testbed 
+                for future CMB and line intensity mapping detectors. I installed and optimized thermal connections to achieve a 
+                48-hour hold time and integrated multiplexed TES detector readout. I also validated superconducting readout flex cables for the 
+                TIME experiment to inform manufacturing recipes for on-site deployment.
+            </p>
+              <p><a href="" aria-label="Read more about TIME & instrument work">Read more / lab notes</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HCI panel: exoplanet photonic lantern nuller -->
+      <section id="panel-hci" class="tab-panel" role="tabpanel" aria-labelledby="tab-hci" hidden>
+        <div class="research-item">
+          <div style="display:flex;gap:18px;align-items:flex-start;">
+            <img src="assets/img/research/pln_exoplanet.jpg" alt="Photonic Lantern Nuller for Exoplanet Imaging" style="width:260px;height:auto;border-radius:6px;object-fit:cover;">
+            <div>
+              <h3>Caltech SURF : Exoplanet Technology Lab</h3>
+              <p><strong>Institution:</strong> Caltech &nbsp;•&nbsp; <strong>Dates:</strong> June 2024 – Nov 2025 &nbsp;•&nbsp; <strong>Advisors:</strong> Dr. Yinzi Xin, Dr. Nemnja Jovanovic, Prof. Dimitri Mawet</Main></p>
+              <p>
+                In the Exoplanet Technology Lab at Caltech, I developed post-processing algorithms for the direct imaging of exoplanets. 
+                I numerically characterized the PLN's signal limitations and implemented cost-function optimization to successfully localize 
+                planets in rotationally non-invariant data. This research culminated in a co-authored paper in JATIS and the submission of a 
+                first-author manuscript (currently under review).
+            </p>
+              <p><a href="#" aria-label="Read more about PLN and code repositories">Read more / code & demos</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="assets/js/research.js" defer></script>
+</body>
+</html>

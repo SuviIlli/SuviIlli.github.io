@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Research — Your Name</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img class="avatar" src="assets/img/profile.jpg" alt="Your Name">
+    <h1>Your Name</h1>
+    <p class="role">Researcher</p>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="posters.html">Posters</a>
+      <a href="assets/cv/SuviIlli_CV.pdf" download>CV (PDF)</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h2>Research</h2>
+      <p>My work spans experimental cosmology and high-contrast imaging of exoplanets. Use the tabs below to switch between areas.</p>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Research areas">
+      <div class="tab-buttons" role="presentation">
+        <button id="tab-exp" class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-exp" data-target="exp">Experimental Cosmology</button>
+        <button id="tab-hci" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-hci" data-target="hci">High-Contrast Imaging of Exoplanets</button>
+      </div>
+
+      <section id="panel-exp" class="tab-panel" role="tabpanel" aria-labelledby="tab-exp">
+        <h3>Experimental Cosmology</h3>
+        <p>This is the default subtab. Describe experiments, instrumentation, surveys, and current projects here.</p>
+        <ul>
+          <li><strong>Project A</strong> — short description. <a href="#">Read more</a></li>
+          <li><strong>Project B</strong> — short description. <a href="#">Read more</a></li>
+        </ul>
+        <p>Resources: data releases, code, and links to relevant publications can be placed here.</p>
+      </section>
+
+      <section id="panel-hci" class="tab-panel" role="tabpanel" aria-labelledby="tab-hci" hidden>
+        <h3>High-Contrast Imaging of Exoplanets</h3>
+        <p>Describe instrumentation (coronagraphy, wavefront control), observing campaigns, and analysis pipelines for HCI here.</p>
+        <ul>
+          <li><strong>Project X</strong> — short description. <a href="#">Read more</a></li>
+          <li><strong>Project Y</strong> — short description. <a href="#">Read more</a></li>
+        </ul>
+        <p>Include links to code, demo images, and publications relevant to HCI.</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="assets/js/research.js" defer></script>
+</body>
+</html>

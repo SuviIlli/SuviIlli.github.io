@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Posters — Your Name</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <img class="avatar" src="assets/img/profile.jpg" alt="Your Name">
+    <h1>Your Name</h1>
+    <p class="role">Researcher</p>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="posters.html">Posters</a>
+      <a href="assets/cv/SuviIlli_CV.pdf" download>CV (PDF)</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h2>Posters</h2>
+      <p>Below are selected posters. Click a thumbnail to view the PDF. Use the download button in the viewer to save a copy.</p>
+    </header>
+
+    <section class="posters-grid" aria-label="Poster gallery">
+      <!-- Example poster entries (update with your files) -->
+      <article class="poster-card" data-pdf="assets/posters/poster1.pdf">
+        <img src="assets/img/posters/thumb-poster1.jpg" alt="Poster title — Conference (Year)">
+        <div class="meta">
+          <strong>Poster Title 1</strong>
+          <span class="event">Conference Name — 2024</span>
+        </div>
+        <div class="poster-actions">
+          <button class="view-btn">View</button>
+          <a class="download-link" href="assets/posters/poster1.pdf" download>Download</a>
+        </div>
+      </article>
+
+      <article class="poster-card" data-pdf="assets/posters/poster2.pdf">
+        <img src="assets/img/posters/thumb-poster2.jpg" alt="Poster title 2 — Workshop (Year)">
+        <div class="meta">
+          <strong>Poster Title 2</strong>
+          <span class="event">Workshop — 2023</span>
+        </div>
+        <div class="poster-actions">
+          <button class="view-btn">View</button>
+          <a class="download-link" href="assets/posters/poster2.pdf" download>Download</a>
+        </div>
+      </article>
+
+      <!-- Add more poster-card articles as needed -->
+    </section>
+  </main>
+
+  <!-- Modal for viewing poster PDFs -->
+  <div id="posterModal" class="modal" aria-hidden="true" role="dialog" aria-label="Poster viewer">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close viewer">×</button>
+      <div class="modal-toolbar">
+        <a id="modalDownload" class="modal-download" href="#" download>Download PDF</a>
+      </div>
+      <div class="modal-body">
+        <!-- The iframe will be set dynamically by JS -->
+        <iframe id="modalIframe" src="" frameborder="0" aria-label="Poster PDF viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/posters.js" defer></script>
+</body>
+</html>

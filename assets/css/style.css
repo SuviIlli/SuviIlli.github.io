@@ -34,8 +34,37 @@ body{
 .sidebar .role{color:var(--muted);font-size:13px}
 .sidebar nav{display:flex;flex-direction:column;gap:6px;margin-top:8px}
 .sidebar nav a{color:var(--accent);text-decoration:none;font-weight:600}
-.social{margin-top:auto;font-size:13px}
-.social a{display:inline-block;margin-right:8px;color:var(--muted);text-decoration:none}
+.social{
+  margin-top:auto;
+  font-size:13px;
+  display:flex;
+  gap:8px;
+}
+
+.social .icon-link{
+  width:22px;
+  height:22px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  text-decoration:none;
+  border-radius:50%;
+  border:1px solid #d3d7e3;
+  background:#fff;
+  transition:background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.social .icon-link svg{
+  width:14px;
+  height:14px;
+}
+
+.social .icon-link:hover{
+  color:#fff;
+  background:var(--accent);
+  border-color:var(--accent);
+}
 
 .content{
   padding:36px;
@@ -48,7 +77,6 @@ body{
   .sidebar{width:100%;border-right:none;border-bottom:1px solid #e6e9ef}
 }
 
-/* --- Tabs (Research subtabs) --- */
 .tabs{
   margin-top:18px;
   background:transparent;
@@ -81,10 +109,8 @@ body{
   border-radius:8px;
   padding:18px;
 }
-/* Ensure that hidden panels are not focusable */
 .tab-panel[hidden]{display:none}
 
-/* Posters grid */
 .posters-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
@@ -251,4 +277,141 @@ body{
 }
 @media (max-width:600px){
   .courses-grid{grid-template-columns:1fr}
+}
+
+
+.research-card{
+  display:flex;
+  flex-direction:column;        
+  gap:10px;
+  background:white;
+  border:1px solid #e6e9ef;
+  border-radius:10px;
+  padding:14px 16px 18px;
+  margin-top:16px;
+  box-shadow:0 10px 4px rgba(15,23,42,0.04);
+}
+
+.research-media{
+  margin-bottom:4px;
+}
+
+.research-media img{
+  width:100%;                  
+  max-height:340 px;
+  border-radius:8px;
+  object-fit:cover;
+  background:#f0f2f5;
+}
+
+.research-body{
+  flex:1;
+}
+
+.research-meta{
+  margin:4px 0 10px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+@media (max-width:800px){
+  .research-card{
+    padding:12px 12px 16px;
+  }
+}
+.research-body{
+  flex:1;
+}
+.research-meta{
+  margin:4px 0 10px;
+  font-size:13px;
+  color:var(--muted);
+}
+.research-links{
+  margin:4px 0;
+  font-size:13px;
+}
+@media (max-width:800px){
+  .research-card{
+    flex-direction:column;
+  }
+  .research-media img{
+    width:100%;
+    max-width:100%;
+  }
+}
+
+.hero{
+  position:relative;
+  margin:-20px -36px 24px; 
+  height:220px;
+  overflow:hidden;
+  border-radius:0 0 10px 10px;
+  box-shadow:0 6px 12px rgba(15,23,42,0.18);
+}
+
+.hero-image{
+  position:absolute;
+  inset:0;
+  background-image:url("../img/hero_milkyway.jpg"); 
+  background-size:cover;
+  background-position:center;
+  filter:brightness(0.7);
+}
+
+.hero-overlay{
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:flex-end;
+  padding:24px 32px;
+}
+
+.hero-text{
+  color:#fff;
+  text-shadow:0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-name{
+  margin:0;
+  font-size:32px;
+  letter-spacing:0.03em;
+  font-weight:600;
+}
+
+.hero-tagline{
+  margin:6px 0 0;
+  font-size:14px;
+  max-width:540px;
+}
+
+/* Tighten for mobile */
+@media (max-width:800px){
+  .hero{
+    margin:-20px -16px 24px;
+    height:200px;
+    border-radius:0 0 8px 8px;
+  }
+  .hero-overlay{
+    padding:18px 20px;
+  }
+  .hero-name{
+    font-size:26px;
+  }
+  .hero-tagline{
+    font-size:13px;
+  }
+}
+.content section{
+  margin-bottom:26px;
+}
+
+.content h2{
+  margin-top:12px;
+  margin-bottom:6px;
+  color:var(--accent);
+  border-bottom:1px solid #e3e7f0;
+  padding-bottom:4px;
 }

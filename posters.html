@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Posters — Your Name</title>
+  <title>Posters — Suvinay Goyal</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <aside class="sidebar">
     <img class="avatar" src="assets/img/profile.jpg" alt="Your Name">
-    <h1>Your Name</h1>
-    <p class="role">Researcher</p>
+    <h1>Suvinay Goyal</h1>
+    <p class="role">Undergraduate Senior in Experimental and Observational Cosmology</p>
     <nav>
       <a href="index.html#about">About</a>
       <a href="research.html">Research</a>
-      <a href="index.html#publications">Publications</a>
-      <a href="teaching.html">Teaching</a>
+      <!-- <a href="index.html#publications">Publications</a> -->
+      <!-- <a href="teaching.html">Teaching</a> -->
       <a href="posters.html">Posters</a>
       <a href="assets/cv/SuviIlli_CV.pdf" download>CV (PDF)</a>
       <a href="index.html#contact">Contact</a>
@@ -25,40 +25,51 @@
   <main class="content">
     <header>
       <h2>Posters</h2>
-      <p>Below are selected posters. Click a thumbnail to view the PDF. Use the download button in the viewer to save a copy.</p>
+      <p>Below are selected posters. Click view in a thumbnail to view the PDF. Use the download button in the viewer to save a copy.</p>
     </header>
 
     <section class="posters-grid" aria-label="Poster gallery">
-      <!-- Example poster entries (update with your files) -->
-      <article class="poster-card" data-pdf="assets/posters/poster1.pdf">
-        <img src="assets/img/posters/thumb-poster1.jpg" alt="Poster title — Conference (Year)">
+      <article class="poster-card" data-pdf="assets/posters/Starlinks_Poster.pdf">
+        <img src="assets/img/posters/thumb-starlinks.jpg" alt="Poster title — Conference (Year)">
         <div class="meta">
-          <strong>Poster Title 1</strong>
-          <span class="event">Conference Name — 2024</span>
+          <strong>Investigating Starlink Interference in SPIDER’ s Field of View</strong>
+          <span class="event">Undergrad Research Symposium and Astrofest 2024, UIUC</span>
+          <p>The content here is a little outdated and a lot of progress has been made. See the github repo <a href="https://github.com/SuviIlli/SpiderStarlink" target="_blank" rel="noopener">here</a>.</p>
         </div>
         <div class="poster-actions">
           <button class="view-btn">View</button>
-          <a class="download-link" href="assets/posters/poster1.pdf" download>Download</a>
+          <a class="download-link" href="assets/posters/Starlinks_Poster.pdf" download>Download</a>
         </div>
       </article>
 
-      <article class="poster-card" data-pdf="assets/posters/poster2.pdf">
-        <img src="assets/img/posters/thumb-poster2.jpg" alt="Poster title 2 — Workshop (Year)">
+      <article class="poster-card" data-pdf="assets/posters/Window.pdf">
+        <img src="assets/img/posters/thumb-window.jpg" alt="Poster title 2 — Workshop (Year)">
         <div class="meta">
-          <strong>Poster Title 2</strong>
-          <span class="event">Workshop — 2023</span>
+          <strong>Developing an Ultra-Thin UHMWPE Window for the Terahertz Intensity Mapper</strong>
+          <span class="event">Undergrad Research Symposium and Astrofest 2025, UIUC</span>
         </div>
         <div class="poster-actions">
           <button class="view-btn">View</button>
-          <a class="download-link" href="assets/posters/poster2.pdf" download>Download</a>
+          <a class="download-link" href="assets/posters/Window.pdf" download>Download</a>
         </div>
       </article>
 
-      <!-- Add more poster-card articles as needed -->
+      <article class="poster-card" data-pdf="assets/posters/PLN.pdf">
+        <img src="assets/img/posters/thumb-PLN.jpg" alt="Poster title 2 — Workshop (Year)">
+        <div class="meta">
+          <strong>Analysis of Angular-Differential Post-Processing Algorithms for Exoplanet Direct Detection with a PLN</strong>
+          <span class="event">APS Global Physics Summit 2025</span>
+          <p>The content here is outdated and many results changed. See the paper preprint.</p>
+        </div>
+        <div class="poster-actions">
+          <button class="view-btn">View</button>
+          <a class="download-link" href="assets/posters/PLN.pdf" download>Download</a>
+        </div>
+      </article>
+
     </section>
   </main>
 
-  <!-- Modal for viewing poster PDFs -->
   <div id="posterModal" class="modal" aria-hidden="true" role="dialog" aria-label="Poster viewer">
     <div class="modal-content" role="document">
       <button class="modal-close" aria-label="Close viewer">×</button>
@@ -66,7 +77,6 @@
         <a id="modalDownload" class="modal-download" href="#" download>Download PDF</a>
       </div>
       <div class="modal-body">
-        <!-- The iframe will be set dynamically by JS -->
         <iframe id="modalIframe" src="" frameborder="0" aria-label="Poster PDF viewer"></iframe>
       </div>
     </div>
